@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "currency.js": "^2.0.4",
     "daisyui": "^4.12.14",
     "matter-js": "^0.20.0",

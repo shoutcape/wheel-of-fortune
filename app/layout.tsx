@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Rye } from 'next/font/google'
 import { BalanceProvider } from "./contexts/balanceContext";
+import { Analytics } from '@vercel/analytics/next';
 
 
 export const metadata: Metadata = {
@@ -29,6 +30,7 @@ export default function RootLayout({
         <BalanceProvider>
           {children}
         </BalanceProvider>
+        <Analytics />
       </body>
     </html>
   );
